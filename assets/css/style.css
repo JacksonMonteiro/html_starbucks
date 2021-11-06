@@ -133,7 +133,7 @@ body {
 	height: 350px;
 }
 
-/* Section Two */ 
+/* Section Two */
 .section-two__content {
 	width: 100%;
 	display: grid;
@@ -208,7 +208,7 @@ body {
 		font-size: 54px !important;
 	}
 
-	.main__	p {
+	.main__ p {
 		width: 60%;
 	}
 
@@ -222,69 +222,49 @@ body {
 
 	.section-three__content {
 		grid-template-columns: 3fr 2fr;
-	}   
+	}
 }
 
-@media only screen and (max-width: 425px) {
-	.container {
-		padding: 0 20px;
+@media only screen and (max-width: 575.98px) {
+	.main {
+		background-position: center right;
+		background-size: cover;
 	}
 
-	.banner {
-		padding-left: 40px;
+	.main__title {
+		font-size: 36px !important;
+		line-height: 50px !important;
 	}
 
-	.header-search input {
-		max-width: 150px;
+	.main__p {
+		width: 100% !important;
+		max-width: 300px !important;
 	}
 
-	.header-menu {
-		margin-left: 20px;
-		cursor: pointer;
-	}
-
-	h1 {
-		font-size: 50px;
-		line-height: 50px;
-	}
-
-	.banner p {
-		max-width: 300px;
-	}
-
-	h2 {
-		font-size: 25px;
-		line-height: 30px;
-	}
-
-	.banner-images img {
-		max-width: 70px;
+	.main__banner {
+		height: 100%;
 		width: 100%;
-		border: 3px solid var(--green);
-		border-radius: 50%;
-		margin-right: 10px;
+		max-width: 340px;
+		max-height: 75px;
 	}
 
-	.area1,
-	.area2,
-	.area3,
-	.area4 {
+	.main__banner img {
+		border-width: 3px !important;
+	}
+
+	.section-one__content,
+	.section-two__content,
+	.section-three__content,
+	.section-four__content {
 		grid-template-columns: 1fr;
 	}
 
-	.area1-content,
-	.area2-content, 
-	.area3-content,
-	.area4-content {
-		padding: 40px;
-	}
-
-	.area5 {
-		height: 200px;
+	.section-three-content__info {
+		padding: 120px 80px !important;
 	}
 
 	footer {
-		font-size:14px;
+		font-size: 14px;
 		padding: 20px;
 	}
 }
