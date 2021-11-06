@@ -158,3 +158,39 @@ body {
 	background-position: center;
 	height: 350px;
 }
+
+/* Section three */
+.section-three__content {
+	background-image: url("../images/bg2.jpg");
+	background-size: cover;
+	background-position: left;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.section-three__img {
+	background-image: url("../images/f5.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.section-three-content__info {
+	padding: 200px 80px !important;
+}
+
+/* Section Four */
+.section-four__content {
+	background-color: #E8E9EE;
+	display: grid;
+	grid-template-columns: 1.5fr 2fr;
+}
+
+.section-four__info {
+	padding: 160px 80px;
+}
+
+.section-four__img {
+	background-image: url("../images/bg3.jpg");
+	background-size: cover;
+	background-position: left;
+}
