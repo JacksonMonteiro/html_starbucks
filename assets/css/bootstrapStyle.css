@@ -182,7 +182,7 @@ body {
 .section-four__content {
 	background-color: #E8E9EE;
 	display: grid;
-	grid-template-columns: 1.5fr 2fr;
+	grid-template-columns: 1fr 2fr;
 }
 
 .section-four__info {
