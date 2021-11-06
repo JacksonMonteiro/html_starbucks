@@ -1,6 +1,9 @@
-*/* Variables */
+/* Variables */
 :root {
 	--green: #117050;
+	--title: 96px;
+	--secondary-title: 54px;
+	--text: 16px;
 }
 
 /* Fonts */
@@ -16,24 +19,42 @@
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -50,4 +71,64 @@ body {
 
 .logo {
 	max-width: 64px;
+}
+
+.main {
+	width: 100%;
+	height: calc(100vh - 85px);
+	background-image: url('../images/bg.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: 80px;
+}
+
+.main__title {
+	font-size: var(--title) !important;
+}
+
+.main__p {
+	font-size: var(--text) !important;
+}
+
+.main__banner {
+	height: 100%;
+	width: 100%;
+	max-width: 500px;
+	max-height: 175px;
+}
+
+.main__banner-img--border-green {
+	border-color: var(--green) !important;
+}
+
+/* Section One */
+.section__bar {
+	background-color: var(--green);
+	width: 168px;
+	height: 14px;
+}
+
+.section-one__content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.section-one-content__info {
+	padding: 80px !important;
+}
+
+.section-one__img-1 {
+	background-image: url("../images/f1.jpg");
+	background-size: cover;
+	background-position: center;
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+}
+
+.section-one__img-2 {
+	background-image: url("../images/f2.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 350px;
 }
