@@ -132,3 +132,29 @@ body {
 	background-position: center;
 	height: 350px;
 }
+
+/* Section Two */ 
+.section-two__content {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.section-two-content__info {
+	padding: 80px !important;
+}
+
+.section-two__img-1 {
+	background-image: url("../images/f3.jpg");
+	background-size: cover;
+	background-position: center;
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+
+.section-two__img-2 {
+	background-image: url("../images/f4.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 350px;
+}
